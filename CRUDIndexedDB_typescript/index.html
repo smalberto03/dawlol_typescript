@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD Libros</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ss.css'>
+
+
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MB7HJ8K');
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+</head>
+<body>
+
+    <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB7HJ8K"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>-->
+    <header>
+        <nav tabindex="1" id="nav">
+            <ul>
+                <li><img src="/imagenes/libro_logo.png" alt logo></li>
+                <li class="subrayado" lang="es" id="liLista" tabindex="2" role="">Listado de libros</li>
+                <li lang="es" id="lianadir" tabindex="4">Añadir nuevo libro</li>
+                <li><img src="/imagenes/waiaa.png"></li>
+            </ul>
+        </nav><br><br>
+    </header>
+    <h1 class="title">CRUD Libros con IndexedDB</h1><br><br>
+    <section class="add_names">
+
+        <p id="divAnadir" alt="Contiene el formulario" lang="es" tabindex="5">
+            <label>Nombre del libro: </label> <input type="text" id="elementName" class="add_input" placeholder="Nombre " autocomplete="none"><br><br>
+            <label> <input type="checkbox"> Acepto sin reserva los <a href="lopd.html">Términos de protección de datos</a></label><button id="add_date">Añadir</button><br><br>
+        </p>
+    </section>
+    <section class="your_dates">
+
+    </section>
+    <footer>
+        <p class="copyright"></p>
+        <p>
+            <span><a href="avisolegal.html">Aviso legal</a></span> 
+         </p>
+    </footer>
+
+    <div class="aviso-cookies" id="aviso-cookies">
+        <img class="galleta" src="./img/cookie.svg" alt="Galleta">
+        <h3 class="titulo">Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+        <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+    <script type="module" src="aviso-cookies/js/aviso-cookies.js"></script>
+    <script src='index.ts'></script> 
+</body>
+</html>
